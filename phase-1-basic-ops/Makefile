@@ -5,7 +5,7 @@ LOG_DIR = $(OUT_DIR)/logs
 RESULT_FILE = results.md
 
 # 🔍 실험 디렉토리
-DIRS := 1-basic-operations 2-syscalls
+DIRS := 1-integer-vs-float 2-loop-branch-recursion 3-memory-operations
 SRC_FILES := $(foreach dir,$(DIRS),$(wildcard $(dir)/*.c))
 TARGETS := $(notdir $(SRC_FILES:.c=))
 
