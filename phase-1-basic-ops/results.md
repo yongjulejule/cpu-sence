@@ -1,7 +1,7 @@
-| 실험 이름 | Wall Time | User CPU | System CPU | CPU 사용률 | Instructions | Cycles | IPC |
-|------------|-----------|----------|------------|--------------|--------------|--------|-----|
-| integer_ops | 0:06.40 | 6.39 | 0.01 | 99% | 6026454490 | 8064703080 | 0.75 |
-| float_ops | 0:07.77 | 7.76 | 0.01 | 99% | 14631161134 | 9872772686 | 1.48 |
-| iterative_sum | 0:00.00 | 0.00 | 0.00 | 100% | 7106143 | 10096076 | 0.70 |
-| recursive_sum | 0:00.00 | 0.00 | 0.00 | 100% | 6079646 | 2998130 | 2.03 |
-| memory_alloc | 0:00.00 | 0.00 | 0.00 | 0% | 1087685 | 1817138 | 0.60 |
+| Test | task-clock | cycles | instructions | cache-misses | stalled-cycles-frontend | stalled-cycles-backend | context-switches | page-faults | branches | branch-misses | user_time | sys_time | time_elapsed |
+|------|----------|------|------------|------------|-----------------------|----------------------|----------------|-----------|--------|-------------|---------|--------|------------|
+| integer_ops | 7528.63 (1.000 CPUs utilized) | 6863425099 (0.912 GHz (84.31%)) | 5172687165 (0.75 insn per cycle), 0.16 stalled per insn (83.34%) | - | 842070084 (12.27% frontend cycles idle (87.61%)) | 806086001 (11.74% backend cycles idle (87.50%)) | 33 (4.383 /sec) | 60 (7.970 /sec) | 848806763 (112.744 M/sec (84.91%)) | 1112794 (0.13% of all branches (85.37%)) | 7.517898000 s | 0.010124000 s | 7.530738382 s |
+| float_ops | 9064.36 (1.000 CPUs utilized) | 8055703952 (0.889 GHz (87.10%)) | 12446177327 (1.55 insn per cycle), 0.21 stalled per insn (84.04%) | - | 206117154 (2.56% frontend cycles idle (85.72%)) | 2570687746 (31.91% backend cycles idle (85.04%)) | 36 (3.972 /sec) | 76 (8.384 /sec) | 1262321200 (139.262 M/sec (85.40%)) | 1285499 (0.10% of all branches (86.50%)) | 9.051491000 s | 0.012109000 s | 9.066484885 s |
+| iterative_sum | 11.06 (0.946 CPUs utilized) | 6424033 (0.581 GHz (91.04%)) | 4358415 (0.68 insn per cycle), 0.25 stalled per insn (91.00%) | - | 855838 (13.32% frontend cycles idle (90.92%)) | 1068585 (16.63% backend cycles idle (93.80%)) | 0 (0.000 /sec) | 60 (5.424 K/sec) | 1233968 (111.554 M/sec) | 27682 (2.24% of all branches (42.30%)) | 0.007842000 s | 0.003921000 s | 0.011691614 s |
+| recursive_sum | 11.92 (0.949 CPUs utilized) | 37792 (0.003 GHz (91.67%)) | 3372562 (89.24 insn per cycle), 0.08 stalled per insn (95.30%) | - | 106944 (282.98% frontend cycles idle) | 276729 (732.24% backend cycles idle) | 0 (0.000 /sec) | 60 (5.032 K/sec) | 1223882 (102.634 M/sec) | 68266 (5.58% of all branches (13.02%)) | 0.004212000 s | 0.008425000 s | 0.012560133 s |
+| memory_alloc | 8.25 (0.929 CPUs utilized) | 33368 (0.004 GHz (89.60%)) | 1069307 (32.05 insn per cycle) | - | 92607 (277.53% frontend cycles idle) | 293106 (878.40% backend cycles idle) | 0 (0.000 /sec) | 61 (7.393 K/sec) | 217596 (26.373 M/sec) | - | 0.000000000 s | 0.008948000 s | 0.008880081 s |
