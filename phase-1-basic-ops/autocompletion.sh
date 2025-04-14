@@ -4,7 +4,6 @@ _make_complete_targets() {
   # 1. Makefile에서 DIRS 파싱
   local dirs
   dirs=$(grep '^DIRS *:=' Makefile | sed 's/.*:=//')
-  [[ -z "$dirs" ]] && dirs="1-basic-operations"
 
   # 2. .c 파일 기반 실험 타겟 추출
   local files=""
