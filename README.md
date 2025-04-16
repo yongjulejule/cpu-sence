@@ -12,3 +12,7 @@
 - Kubernetes HPA/VPA 설정을 위한 기준값 계산
 - ECS Task Memory/CPU tuning based on measured workload
 - SLO 기준에 따라 리소스 설계 자동화
+
+## 계획
+
+- [llm 의 plan](./plan-llm)
