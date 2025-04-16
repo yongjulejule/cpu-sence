@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-long tail_fact(int n, long acc) {
+unsigned long long tail_fact(unsigned long long n, unsigned long long acc) {
     return (n == 0) ? acc : tail_fact(n - 1, n * acc);
 }
 
 int main() {
-    int n = 20;
+    unsigned long long n = 10000;
     long result = tail_fact(n, 1);
-    printf("Tail Recursion: %d! = %ld\n", n, result);
+    printf("Tail Recursion: %llu! = %llu\n", n, result);
     return 0;
 }
